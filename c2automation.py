@@ -79,6 +79,18 @@ elif age > 2000:
 elif age > 100:
     print('You are not Alice, grannie.')	
 
+print()
+# ------------------------------------------------
+
+name = 'bob'
+if name == 'alice':
+	print('hi, alice')
+elif age < 12:
+	print('you are not alice, kid')
+else:
+	print('You are neither alice nor a little kid.')
+
+
 
 '''
 ====================================================================================================
