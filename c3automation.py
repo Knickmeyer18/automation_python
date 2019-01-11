@@ -7,11 +7,12 @@
 
 # '''
 import random 
-import importlib
+# import c2automation
 
-importlib.import_module('c2automation.py')
+# c2automation.test_variable
 
-test_function()
+# c2_module=c2automation.test_class()
+# c2_module.test_function()
 
 
 # # ------------------------------
@@ -162,9 +163,22 @@ test_function()
 
 
 # print()
-# # ------------ Exception Handling ------------------
+# ------------ Exception Handling ------------------
+'''
+Getting errors or 'exceptions' will cause a program to crash. Don't want this to happen in real-world
+programs. Instead, we want the program to detect errors, handle them, and continue running.
+'''
 
-# '''
+def practice_exception_handling_function(divided_by): # a function to divide numbers by ZERO and other #s can cause an error
+	return 42 / divided_by
 
-# '''
+try:
+	print(practice_exception_handling_function(2))
+	print(practice_exception_handling_function(7))
+	print(practice_exception_handling_function(12))
+	print(practice_exception_handling_function(0)) # this initially caused an error
+except ZeroDivisionError:
+	print('Error HERE: Invalid argument')
+ 
 
+ 
