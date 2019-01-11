@@ -15,11 +15,11 @@ import random
 # c2_module.test_function()
 
 
-# # ------------------------------
+# ------------------------------
 
-# def hello(name, it):
-# 	for i in range(it):
-# 		print("Hello " + name)
+def hello(x,name):
+	for i in range(x):
+		print( "Hello " + name)
 
 # hello('eric', 2)
 
@@ -172,13 +172,11 @@ programs. Instead, we want the program to detect errors, handle them, and contin
 def practice_exception_handling_function(divided_by): # a function to divide numbers by ZERO and other #s can cause an error
 	return 42 / divided_by
 
-try:
-	print(practice_exception_handling_function(2))
-	print(practice_exception_handling_function(7))
-	print(practice_exception_handling_function(12))
-	print(practice_exception_handling_function(0)) # this initially caused an error
-except ZeroDivisionError:
-	print('Error HERE: Invalid argument')
- 
-
- 
+# try:
+# 	print(practice_exception_handling_function(2))
+# 	print(practice_exception_handling_function(7))
+# 	print(practice_exception_handling_function(12))
+# 	print(practice_exception_handling_function(0)) # this initially caused an error
+# except ZeroDivisionError:
+# 	print('Error HERE: Invalid arguments')
+#  
